@@ -1,13 +1,13 @@
 #include <iostream>
-using namespace std;
+//using namespace std;
 int main()
 {
     int a, b, c;
-    cout<<"enter frist number :";
-    cin>>a;
-    cout<<"enter second number : ";
-    cin>>b;
+    std::cout<<"enter frist number :";
+    std::cin>>a;
+    std::cout<<"enter second number : ";
+    std::cin>>b;
     c = a + b;
-    cout<<"sum = "<<c;
+    std::cout<<"sum = "<<c<<std::endl;
     return 0;
 }
