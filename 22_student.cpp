@@ -6,6 +6,8 @@ class student
     string name;
     int rno;
     float per;
+    static int totalpass;
+    static int totalfail;
     public:
     void setstudent(string s,int a,float b)
     {
