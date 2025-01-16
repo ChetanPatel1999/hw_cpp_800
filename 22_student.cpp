@@ -24,14 +24,24 @@ class student
         if(per>=33)
         {
             cout<<"student pass"<<endl;
+            totalpass++;
         }
         else{
             cout<<"student fail"<<endl;
+            totalfail++;
         }
         cout<<"_________________________________________________"<<endl;
     }
+    void totalresult()
+    {
+        cout<<"totalpass : "<<totalpass<<endl;
+        cout<<"totalfail : "<<totalfail<<endl;
+        cout<<"______________________________________"<<endl;
+    }
 
 };
+int student::totalpass=0;
+int student::totalfail=0;
 int main()
 {
     student s1,s2,s3,s4;
@@ -43,5 +53,6 @@ int main()
     s2.resultcard();
     s3.resultcard();
     s4.resultcard();
+    s1.totalresult();
     return 0;
 }
