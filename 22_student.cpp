@@ -12,7 +12,7 @@ class student
     static string c_teacher;
 
 public:
-    void setstudent(string s, int a, float b)
+    student(string s, int a, float b)//constructor
     {
         name = s;
         rno = a;
@@ -59,12 +59,11 @@ int student::totalstd = 0;
 string student::c_teacher = "mohit sharma";
 int main()
 {
-    student s1, s2, s3, s4;
     student::disp_class_teacher();
-    s1.setstudent("kuber", 101, 75.78);
-    s2.setstudent("vijay", 102, 89.77);
-    s3.setstudent("chetan", 103, 23.88);
-    s4.setstudent("vinu", 104, 33);
+    student s1("kuber", 101, 75.78);
+    student s2("vijay", 102, 89.77);
+    student s3("chetan", 103, 23.88);
+    student s4("vinu", 104, 33);
     s1.resultcard();
     s2.resultcard();
     s3.resultcard();

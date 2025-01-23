@@ -10,7 +10,7 @@ class account
     static string bank_name;
 
 public:
-    void create_account(string s1, string s2, int b)
+    account(string s1, string s2, int b)
     {
         holder_name = s1;
         account_no = s2;
@@ -63,10 +63,9 @@ int account::total_account = 0;
 string account::bank_name = "SBI";
 int main()
 {
-    account ac1, ac2, ac3;
-    ac1.create_account("kuber", "1212", 5000);
-    ac2.create_account("lakshya", "1213", 2000);
-    ac3.create_account("vijay", "1214", 10000);
+    account ac1("kuber", "1212", 5000),
+        ac2("lakshya", "1213", 2000),
+        ac3("vijay", "1214", 10000);
     account::bank_name_display();
     cout << "_____________________________________" << endl;
     ac1.account_display();
