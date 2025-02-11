@@ -27,6 +27,6 @@ class demo
 };
 int main()
 {
-    demo d1(7,89,78),d2;
+    demo d1(12);
     return 0;
 }

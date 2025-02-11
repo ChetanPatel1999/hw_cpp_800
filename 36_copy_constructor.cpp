@@ -14,8 +14,8 @@ public:
     emp(emp &obj) // copy constructor
     {
         cout << "copy constructor is called" << endl;
-        id = obj.id+1;
-        sal = obj.sal+2000;
+        id = obj.id;
+        sal = obj.sal;
     }
     void display()
     {

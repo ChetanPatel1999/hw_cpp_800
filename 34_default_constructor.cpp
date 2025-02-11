@@ -22,6 +22,8 @@ int main()
 {
     emp e1(101, 5000), e2(102, 4000),e3(103),e4;
     e1.display();
+    e2.display();
+    e3.display();
     e4.display();
     return 0;
 }
