@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class A
+class A        // base class // perant class // super class
 {
 public:
     void m1()
@@ -12,7 +12,7 @@ public:
         cout << "class A m2 is called" << endl;
     }
 };
-class B:public A
+class B:public A   // derived class // child class // sub class
 {
 public:
     void m3()
